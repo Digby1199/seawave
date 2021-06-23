@@ -24,7 +24,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <h5 class="modal-title" id="exampleModalLabel">anda akan segera log out</h5>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
@@ -46,10 +46,13 @@
         $(this).next('.custom-file-label').addClass("selected").html(fileName);
     });
 
-    <script
+    <
+    script
     script src = "<?= base_url('assets/'); ?>vendor/jquery/jquery.min.js" >
+        <
+        /> <
+    script src = "<?= base_url('assets/'); ?>vendor/bootstrap/js/bootstrap.bundle.min.js" >
 </script>
-<script src="<?= base_url('assets/'); ?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Core plugin JavaScript-->
 <script src="<?= base_url('assets/'); ?>vendor/jquery-easing/jquery.easing.min.js"></script>
