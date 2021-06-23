@@ -1,22 +1,22 @@
         <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul class="navbar-nav bg-gradient-info sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-ship"></i>
+                    <i class="fas fa-fish"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">My CARGO </div>
+                <div class="sidebar-brand-text mx-3">SEAWAVE </div>
             </a>
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
             <div class="sidebar-heading">
-                Administator
+
             </div>
 
             <li class="nav-item">
                 <a class="nav-link" href="dashboard">
-                <i class="fas fa-eye"></i>
+                    <i class="fas fa-eye"></i>
                     <span>Dashboard</span></a>
             </li>
 
@@ -35,9 +35,9 @@
             <!-- LOOPING MENU -->
             <?php foreach ($menu as $m) : ?>
                 </li>
-                
 
-                                <!-- menyiapkan sub-menu sesuai menu-->
+
+                <!-- menyiapkan sub-menu sesuai menu-->
                 <?php
                 $menuid = $m['id'];
                 $querySubMenu = "SELECT *
@@ -50,12 +50,13 @@
                 $submenu = $this->db->query($querySubMenu)->result_array();
 
                 ?>
-                            <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block">
-            <div class="sidebar-heading">
-            
-            </div>
-            </li>
+                <!-- Divider -->
+                <hr class="sidebar-divider d-none d-md-block">
+                <div class="sidebar-heading">
+                    profil
+
+                </div>
+                </li>
                 <?php foreach ($submenu as $sm) : ?>
                     <?php if ($title ==  $sm['title']) : ?>
                         <li class="nav-item active">
@@ -74,36 +75,36 @@
 
 
                 <?php endforeach; ?>
-                
+
                 <!-- Divider -->
                 <hr class="sidebar-divider d-none d-md-block">
                 <div class="sidebar-heading">
-                    Departure and Arrival
+                    menu
                 </div>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="jadwal">
-                    <i class="far fa-calendar-alt"></i>
-                        <span>Jadwal</span></a>
+                    <a class="nav-link" href="info">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Info produk</span></a>
                 </li>
-                
-                <!-- Divider -->
+
+                <!-- Divider
                 <hr class="sidebar-divider d-none d-md-block">
                 <div class="sidebar-heading">
                     Menu
                 </div>
                 <li class="nav-item">
                     <a class="nav-link" href="cektarif">
-                    <i class="fas fa-money-bill-wave"></i>
-                        <span>Cek Tarif</span></a>
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>Cek Tarif</span></a> -->
                 </li>
                 <hr class="sidebar-divider d-none d-md-block">
                 <div class="sidebar-heading">
-                    
+
                 </div>
                 <li class="nav-item">
                     <a class="nav-link" href="about">
-                    <i class="fas fa-info-circle"></i>
+                        <i class="fas fa-info-circle"></i>
                         <span>About</span></a>
                 </li>
 

@@ -2,7 +2,7 @@
 <footer class="sticky-footer bg-white">
     <div class="container my-auto">
         <div class="copyright text-center my-auto">
-            <span>Copyright &copy; MY CARGO <?= date('Y'); ?></span>
+            <span>Copyright &copy; SEAWAVE <?= date('Y'); ?></span>
         </div>
     </div>
 </footer>
@@ -24,7 +24,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Hayoo mau keluar?</h5>
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
@@ -38,7 +38,7 @@
     </div>
 </div>
 
-    
+
 <!-- Bootstrap core JavaScript-->
 <script>
     $('.custom-file-input').on('change', function() {
@@ -46,7 +46,9 @@
         $(this).next('.custom-file-label').addClass("selected").html(fileName);
     });
 
-<script src="<?= base_url('assets/'); ?>vendor/jquery/jquery.min.js"></script>
+    <script
+    script src = "<?= base_url('assets/'); ?>vendor/jquery/jquery.min.js" >
+</script>
 <script src="<?= base_url('assets/'); ?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Core plugin JavaScript-->
